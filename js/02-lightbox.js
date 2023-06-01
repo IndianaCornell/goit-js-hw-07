@@ -17,8 +17,12 @@ const markup = galleryItems
 
 gallery.insertAdjacentHTML("beforeend", markup);
 
-const lightbox = new SimpleLightbox(".gallery a", {
-  captionsData: "alt",
+// lightbox
+
+let modalGallery = new SimpleLightbox(".gallery a");
+
+modalGallery.on("show.simplelightbox", {
+  //   captionsData: "alt",
   captionDelay: 250,
   captionPosition: "bottom",
 });
