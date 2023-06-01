@@ -22,7 +22,7 @@ gallery.insertAdjacentHTML("beforeend", markup);
 let modalGallery = new SimpleLightbox(".gallery a");
 
 modalGallery.on("show.simplelightbox", {
-  //   captionsData: "alt",
+  captionsData: "alt",
   captionDelay: 250,
   captionPosition: "bottom",
 });
