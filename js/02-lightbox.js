@@ -19,9 +19,7 @@ gallery.insertAdjacentHTML("beforeend", markup);
 
 // lightbox
 
-let modalGallery = new SimpleLightbox(".gallery a");
-
-modalGallery.on("show.simplelightbox", {
+let modalGallery = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionDelay: 250,
   captionPosition: "bottom",
